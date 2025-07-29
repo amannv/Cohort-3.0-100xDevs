@@ -1,0 +1,16 @@
+{
+  "name": "week-6.3",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^4.0.5"
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Func in Todo</title>
+</head>
+<body>
+    <h4>Todo-1</h4>
+    <h4>Todo-2</h4>
+    <h4>Todo-3</h4>
+    <h4>Todo-4</h4>
+    <button onclick="deleteTodo()">Delete Todo!</button>
+    <div>
+        <script>
+            function deleteTodo(){
+               const element = document.querySelector("h4");
+               element.parentNode.removeChild(element);
+            }
+        </script>
+    </div>
+</body>
+</html>

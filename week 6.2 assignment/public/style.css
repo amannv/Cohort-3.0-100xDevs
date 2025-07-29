@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+title {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+#signup-container, #signin-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 20px 20px 20px;
+    width: 30%;
+    margin: 30px auto;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.142);
+}
+#signup-container h2, #signin-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+
+}
+
+#signup-container input, #signin-container input {
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+#signup-container input:focus, #signin-container input:focus {
+    border: none;
+    outline: 2px solid skyblue;
+}
+
+#signup-container input:focus::placeholder, #signin-container input:focus::placeholder {
+    color: skyblue;
+}
+
+#signup-container button, #signin-container button {
+    margin-top: 8px;
+    width: 80%;
+    padding: 10px 10px ;
+    background-color: rgb(46, 182, 255);
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 2px 2px;
+    color: black;
+}
+
+#signup-container button:hover, #signin-container button:hover {
+    background-color: rgb(131, 205, 255);
+}
+
+#todoscontainer {
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.142);
+    width: 30%;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+}
+
+#todoscontainer h1 {
+    display: inline-block;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700px;
+}
+
+#todoscontainer #logout-btn {
+    margin: 0px auto;
+    border: 1px solid black;
+    width: 70%;
+    padding: 5px 5px;
+    border-radius: 8px;
+    background-color: rgb(46, 182, 255);
+    box-shadow: 2px 2px;
+
+}
+
+#todoscontainer #logout-btn:hover {
+    background-color: rgb(131, 205, 255);
+}
+
+.todo-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 20px 20px;
+}
+
+.todo-input-container input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    width: 80%;
+    font-size: 16px;
+}
+
+.todo-input-container input:focus {
+    outline: none;
+    border-color: skyblue;
+}
+
+.todo-input-container input:focus::placeholder {
+    color: skyblue;
+}
+
+.todo-input-container button {
+    padding: 10px 30px;
+    margin-left: 20px;
+    background-color: rgb(46, 182, 255);
+    box-shadow: 2px 2px;
+    border-radius: 8px;
+}

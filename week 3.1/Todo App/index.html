@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="addcontainer"></div>
+    <input type="text" />
+    <button onclick="addTodo()">Add Todo!</button>
+        <script>
+            let ctr = 0;
+            function deleteTodo(index){
+                const element = document.getElementById(index);
+                element.parentNode.removeChild(element);
+            }
+            function addTodo(){
+                    const inputEl = document.querySelector("input");
+                    const value = inputEl.value;
+
+                    const newEl = document.createElement("div");
+                    newEl.setAttribute("id", ctr);
+                    newEl.innerHTML = "<div>" + value + "</div><button onclick='deleteTodo(" + ctr + ")'>Delete</Button>";
+                    const parentEl = document.querySelector("#addcontainer");
+                    parentEl.appendChild(newEl);
+                    ctr = ctr + 1;
+            }
+        </script>
+    
+</body>
+</html>

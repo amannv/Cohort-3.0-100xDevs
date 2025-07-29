@@ -1,0 +1,75 @@
+* {
+    font-family: poppins;
+
+}
+body {
+    background-image: url(gradii-1920x1080.png);
+    width: auto;
+    height: auto;
+}
+.background {
+    display: grid;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.056);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 35vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 65px;
+    border: solid rgba(255, 255, 255, 0.37) 1px;
+    box-shadow: 0px 30px 8px 0px rgba(0, 0, 0, 0.09);
+}
+header{
+    height: 8px;
+    
+}
+header h1 {
+    color: white;
+    text-shadow: 0 0 5px #ffffff32,
+                0 0 10px #ffffff1d,
+                0px 8px 8px rgba(0, 0, 0, 0.164);
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
+
+}
+section {
+    text-align: center;
+    margin-bottom: 300px;
+}
+section input {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border-style: none;
+    border-radius: 2px;
+    text-align: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.395);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.082);
+}
+input::placeholder {
+    color: white;
+    font-size: smaller;
+}
+section button {
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.268);
+    border-radius: 2px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    margin: 4px;
+    border: 0.5px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 11px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.082);
+}
+section button:hover {
+     background-color: rgba(255, 255, 255, 0.055);
+}
+section input:focus{
+    color: white;
+    border-style: none;
+}

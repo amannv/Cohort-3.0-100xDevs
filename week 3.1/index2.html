@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+</head>
+
+<body>
+  <h1>Todo list</h1>
+  <div>
+    <div id="todo-1" style="display: flex;">
+      <h4>1. Take class</h4>
+      <button style="padding-left: 4px; width: 50px; height: 30px;" onclick="deleteTodo(1)">delete</button>
+    </div>
+    <div id="todo-2" style="display: flex;">
+      <h4>2. Go out to eat</h4>
+      <button style="padding-left: 4px; width:50px; height: 30px;" onclick="deleteTodo(2)">delete</button>
+    </div>
+  </div>
+  <div>
+    <input type="text"></input>
+    <button>Add Todo</button>
+  </div>
+</body>
+
+<script>
+  function deleteTodo(index) {
+    const element = document.getElementById("todo-" + index);
+    element.parentNode.removeChild(element);
+  }
+</script>
+
+</html>
