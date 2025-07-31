@@ -1,7 +1,7 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://amanverma-cmd:Aman%408789@cluster0.vu2sga4.mongodb.net/todo-app-database");
+mongoose.connect("");
 const { userModel, todoModel } = require("./db");
 const { auth, JWT_SECRET } = require("./auth");
 const { title } = require("process");
