@@ -21,7 +21,6 @@ adminRouter.put("/coursesetting", function (req, res) {
 });
 
 adminRouter.get("/courses/all", function (req, res) {
-    res.send("Hello There!");
 
 });
 
