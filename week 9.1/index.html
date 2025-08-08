@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <button id="btn" onclick="IncrCount()">Counter 0</button>
+</body>
+<script>
+    function IncrCount() {
+        const counter = document.getElementById("btn").innerHTML;
+        const splitcntr = counter.split(" ")[1];
+        const intcounter = parseInt(splitcntr) + 1;
+        document.getElementById("btn").innerHTML = "Counter" + " " + intcounter;
+    }
+</script>
+</html>
